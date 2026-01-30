@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact Us</title>
+     <meta name="description" content="A professional designer template showcasing high-quality images and designer services.">
+     <meta name="keywords" content="designer, professional designer, portfolio, image gallery">
+     
+     <!-- Open Graph / Facebook -->
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="PAGE_URL">
+     <meta property="og:title" content="Designer's Template">
+     <meta property="og:description" content="A professional designer template showcasing high-quality images and designer services.">
+     <meta property="og:image" content="URL_TO_IMAGE">
+     
+     <!-- Twitter -->
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:url" content="PAGE_URL">
+     <meta name="twitter:title" content="Designer's Template">
+     <meta name="twitter:description" content="A professional designer template showcasing high-quality images and designer services.">
+     <meta name="twitter:image" content="URL_TO_IMAGE">
+     <meta name="twitter:site" content="@YourTwitterHandle">
+     
+     <!-- Canonical Link -->
+     <link rel="canonical" href="PAGE_URL">
+     
+     <!-- Favicon -->
+     <link rel="icon" type="image/png" href="images/favicon.png">
+     
+     <link rel="stylesheet" href="style.css?v=1.0.2">
+     <script src="https://kit.fontawesome.com/ae17b5e2d7.js" crossorigin="anonymous" defer></script>
+     <!-- This allows use of any icons in their free section: https://fontawesome.com/search?o=r&m=free -->
+     <style>
+        .twoCards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            align-items: center;
+            padding: 2em;
+        }
+        .twoCards>div {
+            flex: 0 1 45%;
+        }
+        .twoCards img {
+            max-width: 100%;;
+        }
+        @media screen and (max-width: 800px) {
+            .twoCards>div {
+                flex: 0 1 95%;
+            }
+            .twoCards {
+                padding: 1em;
+            }
+        }
+    </style>    
+ </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <div class="twoCards">
+        <div>
+            <h1>
+                Contact Us
+            </h1>
+            <p>
+                Got a question for us? We'd love to hear from you! Please fill out the form & we'll be in touch shortly.
+            </p>
+            <img src="images/homepageConsultation.webp" alt="contact us">
+        </div>
+        <div>
+            <div id="contactFormContainer"></div> 
+        </div>
+    </div>
+   
+     <div id="footer-placeholder"></div>
+     <script src="scripts.js"></script>
+ </body>
+ 
+ </html>

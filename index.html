@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- hey folks - there are notes in here like I'm giving directions because this is based off a for-sale template that I created awhile back ... I just didn't remove the notes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Williams Portfolio Site</title>
+    <meta name="description" content="Personal portfolio site for frontend developer Jeff Williams.">
+    <meta name="keywords" content="developer, professional developer, portfolio, image gallery">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://csrajeff.me">
+    <meta property="og:title" content="Personal Portfolio Site">
+    <meta property="og:description" content="Personal portfolio site for frontend developer Jeff Williams.">
+    <meta property="og:image" content="images/sig_square.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="images/sig_square.jpg">
+    <meta name="twitter:url" content="https://csrajeff.me">
+    <meta name="twitter:title" content="Personal Portfolio Site">
+    <meta name="twitter:description" content="Personal portfolio site for frontend developer Jeff Williams.">
+    <meta name="twitter:image" content="images/sig_square.jpg">
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://csrajeff.me">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="style.css?v=1.0.2">
+    <script src="https://kit.fontawesome.com/ae17b5e2d7.js" crossorigin="anonymous" defer></script>
+    <!-- This allows use of any icons in their free section: https://fontawesome.com/search?o=r&m=free -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2RQQW42QG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T2RQQW42QG');
+    </script>
+
+</head>
+<body>
+    <noscript>
+        <style>
+        body {
+            font-family: sans-serif;
+            background: #fff;
+            color: #000;
+            padding: 2em;
+            line-height: 1.6;
+        }
+        </style>
+        <div style="max-width: 600px; margin: auto; border: 2px dashed #cc0000; padding: 1em; background: #fffbe6;">
+            <h2>JavaScript Required</h2>
+            <p>This site relies heavily on JavaScript for dynamic content, interactive features, and visual effects.</p>
+            <p>For the best experience, please enable JavaScript in your browser settings or <a href="mailto:autumnlanewebmaster@gmail.com">contact me</a> for more info.</p>
+        </div>
+    </noscript>
+    <div id="header-placeholder"></div>
+
+    <div class="homePageCont" id="hp2">
+        <div id="pic1Cont">
+            <img id="homeImg1" src="images/hpImg1.webp" alt="Jeff & Beck in Chicago" />
+            <p id="homeImg1Descriptor"><span>This is me, not the pretty one.</span></p>
+            <p id="homeImg1Descriptor2"><span>She's a <a class="emailMe underlineMe" href="https://beckmccormick.com">font designer</a>.</span></p>
+            <p id="homeIntro">
+                Hey! I'm Jeff & I'm a developer & small business marketer. I'm glad you're here, feel free to <a class="emailMe underlineMe" href="mailto:autumnlanewebmaster@gmail.com?subject=Hey there! I have a question.">reach out</a> with any questions!
+            </p>
+        </div>
+        <div id="aboutIntro">
+            <h2 id="introH2">
+                Let's get to know each other
+            </h2>
+            <p>
+                I've worked on user interfaces since 2014 & my happy place is bringing pixel-perfect designs to life based on designer-created layered files (Figma/Photoshop). 
+            </p>
+            <p>
+                I'm fortunate enough to have a rich occupational background, having worked a blend of military, intelligence, small business ownership, and software development in different locations across the globe, allowing me a unique perspective in the world of development & marketing.
+            </p>
+        </div>
+    </div> <!-- hp2 -->
+
+    <div id="personally" class="homePageCont">
+        <div class="two_cards">
+            <h2>personal life</h2>
+            <svg class="inFromRight" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="20"/>
+                <defs>
+                    <linearGradient id="starburst-gradient" x1="0" y1="0" x2="40" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="40%" stop-color="#3a3af5"/>
+                    <stop offset="75%" stop-color="#ee56e9"/>
+                    </linearGradient>
+                </defs>
+                    <path d="
+                        M20 3
+                        Q23 13 37 20
+                        Q23 27 20 37
+                        Q17 27 3 20
+                        Q17 13 20 3
+                        Z
+                    " fill="url(#starburst-gradient)"/>
+            </svg>
+        </div> <!-- two_cards -->
+        <div class="two_cards">
+
+            <div>
+                <p>
+                    I'm married, father of five, grandfather of four & dog dad of two huskies.
+                </p>
+                <h3>
+                    Hobbies:
+                </h3>
+                <ul>
+                    <li>
+                        Working in our yard<span id="tempDisplay"></span>
+                    </li>
+                    <li>
+                        Grilling & smoking
+                    </li>
+                    <li>
+                        Homebrewing
+                    </li>
+                    <li>
+                        Hiking
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p>
+                    We enjoy food & drink in all varieties - so much so that we actually plan our trips around what the food scene is like where we're going. It's because of this that I <em>really</em> need to stay on top of my exercise!
+                </p>
+                <p>
+                    One of our favorite places that we've visited so far is Scotland. The Scots are very blunt but down to earth & hopsitable, haggis is awesome & the Malt Whisky Trail in the Scottish Highlands is gorgeous.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="hp3">
+
+        <div class="homePageCont">
+
+            <div class="two_cards">
+                <svg class="inFromLeft" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="20"/>
+                    <defs>
+                        <linearGradient id="starburst-gradient" x1="0" y1="0" x2="40" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="40%" stop-color="#3a3af5"/>
+                        <stop offset="75%" stop-color="#ee56e9"/>
+                        </linearGradient>
+                    </defs>
+                        <path d="
+                            M20 3
+                            Q23 13 37 20
+                            Q23 27 20 37
+                            Q17 27 3 20
+                            Q17 13 20 3
+                            Z
+                        " fill="url(#starburst-gradient)"/>
+                </svg>
+                <h2 style="color:#fff;">things I do</h2>
+            </div> <!-- two_cards -->
+
+            <div class="three_cards">
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>
+                            Web Design & Build
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            Not sure exactly what you want? No problem, we'll work through it together! I've been building sites for well over a decade & I use best practices to ensure that your site is performant & looks great!
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-brands fa-searchengin"></i>
+                        <h3>
+                            Local SEO & Marketing
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            My local SEO & marketing service is best used for service businesses that are looking to attract more, qualified leads for their services.
+                        </p>
+                        <p>
+                            I draw on my own experience of multiple successful businesses over the years + my digital skills. My last company hit six figures from $0 in six months.
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-solid fa-pen-nib"></i>
+                        <h3>
+                            Figma/Photoshop to HTML
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            Creating pixel-perfect websites from a designer's vision is 1 part technique, 3 parts art & requires real-world experience to be able to cross-browser & cross-device test.
+                        </p>
+                        <p>
+                            Websites need to be created to look & function great on all devices, not just mobile or desktop.
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-solid fa-eye"></i>
+                        <h3>
+                            Troubleshooting/Debugging
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            ¯\_(ツ)_/¯ "It works on my machine" won't really help get the job done, especially when migrating a site to/from a CMS. It doesn't seem to matter what the CMS is, there is always some sort of bug to be remedied.
+                        </p>
+                        <p>
+                            Throw a plugin into the mix & things can get downright chaotic - I'm looking at you, Elementor.
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-solid fa-user-check"></i>
+                        <h3>
+                            UX/CX Improvement
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            Sometimes designers just get a little carried away with their vision & this can create frustration on the end-user's behalf. Creating intuitive user experiences will always make your website more enjoyable for your customers.
+                        </p>
+                        <p>
+                            Just because we <em>can</em> do the thing on a site doesn't mean we <em>should</em> do the thing, let's keep it simple to start with.
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-solid fa-code"></i>
+                        <h3>
+                            Software Development
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            I started my software development phase in 2022 with <a class="emailMe underlineMe" href="https://www.teammxs.com/">MXS Solutions</a>, where I worked with the Special Projects team <em>(simply amazing people!)</em> in React & Gatsby.
+                        </p>
+                        <p>
+                            This experience opened up a whole new level of possibilities for me that I am happy to continue to explore. Currently I'm the web lead for <a class="emailMe underlineMe" id="Oz" href="https://ocozzio.com">Ocozzio</a> - suuuuper smart folks there!
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+                <div class="skillCard">
+                    <div class="headliner">
+                        <i class="fadeMe fa-solid fa-handshake"></i>
+                        <h3>
+                            Startups
+                        </h3>
+                    </div> <!-- headliner -->
+                    <div class="single">
+                        <p>
+                            I have extensive experience working with & growing nascent companies & a knack for identifying growth opportunities.
+                        </p>
+                        <p>
+                            Process standardization & improvement is a key focus for me with smaller/emerging companies.
+                        </p>
+                    </div>
+                </div> <!-- skillCard -->
+
+            </div> <!-- three_cards -->
+            <div id="technologiesHeader">
+                <h3 class="fadeMe">
+                    Skills & Tech
+                </h3>
+            </div>
+            <div id="technologies">
+                <i class="fadeMe fa-brands fa-html5" data-tooltip="HTML5"></i>
+                <i class="fadeMe fa-brands fa-css3" data-tooltip="CSS3"></i>
+                <i class="fadeMe fa-brands fa-square-js" data-tooltip="JavaScript"></i>
+                <i class="fadeMe fa-brands fa-react" data-tooltip="React"></i>
+                <i class="fadeMe fa-brands fa-node-js" data-tooltip="Node JS"></i>
+                <i class="fadeMe fa-brands fa-jira" data-tooltip="JIRA"></i>
+                <i class="fadeMe fa-brands fa-bootstrap" data-tooltip="Bootstrap"></i>
+                <i class="fadeMe fa-brands fa-wordpress-simple" data-tooltip="WordPress"></i>
+                <i class="fadeMe fa-brands fa-yoast" data-tooltip="Yoast SEO"></i>
+                <i class="fadeMe fa-brands fa-elementor" data-tooltip="Elementor"></i>
+                <i class="fadeMe fa-brands fa-searchengin" data-tooltip="SEO"></i>
+                <i class="fadeMe fa-brands fa-shopify" data-tooltip="Shopify"></i>
+                <i class="fadeMe fa-brands fa-squarespace" data-tooltip="Squarespace"></i>
+                <i class="fadeMe fa-brands fa-cpanel" data-tooltip="cPanel/hosting"></i>
+                <i class="fadeMe fa-brands fa-whmcs" data-tooltip="WHM/WHMCS"></i>
+                <i class="fadeMe fa-brands fa-cloudflare" data-tooltip="Cloudflare"></i>
+                <i class="fadeMe fa-brands fa-aws" data-tooltip="Amazon Web Services"></i>
+                <i class="fadeMe fa-brands fa-github" data-tooltip="GitHub"></i>
+                <i class="fadeMe fa-solid fa-language" data-tooltip="Multilingual"></i>
+                <i class="fadeMe fa-brands fa-linkedin-in" data-tooltip="LinkedIn"></i>
+                <i class="fadeMe fa-brands fa-discord" data-tooltip="Discord"></i>
+                <i class="fadeMe fa-brands fa-slack" data-tooltip="Slack"></i>
+                <i class="fadeMe fa-brands fa-figma" data-tooltip="Figma"></i>
+                <i class="fadeMe fa-brands fa-stripe" data-tooltip="Stripe"></i>
+                <i class="fadeMe fa-brands fa-paypal" data-tooltip="Paypal"></i>
+                <i class="fadeMe fa-brands fa-apple" data-tooltip="Apple/Mac"></i>
+                <i class="fadeMe fa-brands fa-windows" data-tooltip="Windows"></i>
+            </div>
+        </div> <!-- homePageCont -->
+                
+    </div> <!-- hp3 -->
+    
+    <div id="hp4">
+        
+        <div class="homePageCont">
+
+            <div class="two_cards">
+                <h2>things I've done</h2>
+                <svg class="inFromRight" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="20"/>
+                    <defs>
+                        <linearGradient id="starburst-gradient" x1="0" y1="0" x2="40" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="40%" stop-color="#3a3af5"/>
+                        <stop offset="75%" stop-color="#ee56e9"/>
+                        </linearGradient>
+                    </defs>
+                        <path d="
+                            M20 3
+                            Q23 13 37 20
+                            Q23 27 20 37
+                            Q17 27 3 20
+                            Q17 13 20 3
+                            Z
+                        " fill="url(#starburst-gradient)"/>
+                </svg>
+            </div> <!-- two_cards -->
+            <p style="margin: 0 0 0 1em">
+                Below are a few sites that I've done over the years.
+            </p>
+            <div class="three_cards">
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Autumn Lane Websites
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://autumnlanewebsites.com">
+                            <img src="images/ALW.webp" alt="Autumn Lane Websites Website, a creation of Jeff Williams" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            ALW was my flagship site after migrating over from our family branding business to just websites. The site is still operational but under new ownership.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Aston Martin NB
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://www.astonmartinnewportbeach.com/">
+                            <img src="images/amnb.webp" alt="Aston Martin Newport Beach Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            AMNB is the leading retailer for this OEM in the Americas & I had the great privilege of problem-solving some pretty tricky items that were both functional & design-related.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Avenir Bridal Boutique
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://avenirbridalboutique.com/">
+                            <img src="images/Avenir-Bridal-Boutique.webp" alt="Avenir Bridal Boutique Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            Avenir Bridal Boutique is located in coastal Virginia & run by friends Anzen & Amanda. Secure eCommerce site with split navigation featuring multiple designers in their inventory.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Beck McCormick Fonts
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://beckmccormick.com">
+                            <img src="images/Beck.webp" alt="Beck McCormick Fonts Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            This is a fully custom font designer site including a bespoke font preview tool & fully secure eCommerce functionality.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                La Buena Vida Vineyards
+                            </h3>
+                        </div> <!-- headliner -->
+                        <img src="images/LBVV-Weddings.webp" alt="La Buena Vida Vineyards Website" />
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            John & Debbie met by chance at a wine tasting when neither of them worked in the wine industry at all. Fast forward a few years & they have not only a winery but a wedding venue, this couple is <strong>on fire</strong>.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Lotus Las Vegas
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://www.lotuscarslasvegas.com/">
+                            <img src="images/LLV.webp" alt="Lotus Las Vegas Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            One of many Lotus dealer websites I had the privilege to work on - this particular dealership had, at one point, a $4 million car in their inventory.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                The Luxury Wedding Co.
+                            </h3>
+                        </div> <!-- headliner -->
+                        <img src="images/Luxury-wedding-co.webp" alt="The Luxury Wedding Co. Website" />
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            TLWC is from my home area of the Carolinas Piedmont. Terran & her team are absolutely committed to creating magical events for brides & grooms from Greenville to Asheville & Charlotte. Local SEO helps drive prequalified traffic, keeping the company energized & busy!
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Manassas Animal Hospital
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://manassasanimalhospital.com/">
+                            <img src="images/Manassas-Animal-Hospital.webp" alt="Manassas Animal Hospital Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            Dr. Afzal worked with me to create a website for his new veterinary clinic in Manassas, VA. He was very organized, which made it super easy to get his site put together & published in mere hours, all told. Local SEO, informational pages, lead generation, contact forms, patient registration & care forms.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Maserati Dallas
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://www.maseratiofdallas.com/">
+                            <img src="images/maseratiDallas.webp" alt="Maserati Dallas Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            This was simulataneously an exciting & challenging opportunity to work on, given the design's complexity. After it was over with, they got a great website!
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Pawsitive Care Animal Hospital
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://pawsitivecareanimalhospital.com/">
+                            <img src="images/Pawsitive-Care-Animal-Hospital.webp" alt="Pawsitive Care Animal Hospital Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            This is an info site that effectively communicates the passion & commitment of Dr. Mushtaq & his team. Online pharmacy, appointments, and easy contact info. Local SEO helps drive traffic to this business. 
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Punch Drunk Designs
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://punchdrunkdesignco.com/">
+                            <img src="images/Punch-Drunk-Designs.webp" alt="Punch Drunk Designs Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            Whitney is from my home state of South Carolina & she has a site that provides fun, snarky merchandise to make people's day brighter. eCommerce, lead generation, contact forms, informational pages, flash sales.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                RDS Ineos Grenadier
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://www.rdsineosgrenadier.com/">
+                            <img src="images/RDSIneos.webp" alt="RDS Ineos Grenadier Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            This was a pretty simple site that I worked on but I enjoyed it because I got an early look at what looks like a pretty solid vehicle for offroading enthusiasts.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Taylor Made Organics
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://taylormadeorganics.com/">
+                            <img src="images/taylormade-organics.webp" alt="Taylor Made Organics Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            Christy is a real sweetheart & worked with us on various projects. Her website is a little more involved because cosmetics have to be so specific & you really need to up your game to make a good showing of it online. eCommerce, brand-specific optimization, virtual makeup mirror, customizable products.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                Team MXS
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://teammxs.com">
+                            <img src="images/teamMXS.webp" alt="Team MXS Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            I was honored to be tapped out of all the devs in the company to breathe life into the new Team MXS website design, taken from Figma to HTML.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                The Flower Shed Sussex
+                            </h3>
+                        </div> <!-- headliner -->
+                        <img src="images/The-Flower-Shed.webp" alt="The Flower Shed Sussex Website" />
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            Melanie is a British florist, spreading cheer with her arrangements in Sussex. I really enjoyed working with her because she's as gentle-natured & easy to work with as her floral arrangements! Local SEO, eCommerce, contact forms, informational pages, lead generation.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                    <div class="skillCard">
+                        <div class="headliner">
+                            <h3>
+                                The Lawn Barber
+                            </h3>
+                        </div> <!-- headliner -->
+                        <a href="https://mylawnbarberllc.com/">
+                            <img src="images/The-Lawn-Barber-–-Charleston-SC-Lawn-Landcsape.webp" alt="The Lawn Barber Website" />
+                        </a>
+                    </div> <!-- skillCard -->
+                    <div class="skillCard borderless">
+                        <h4>
+                            Site Summary:
+                        </h4>
+                        <p>
+                            I was excited to put this site together because I previously owned (and sold) a couple of landscaping companies, so this was a great fit for both of us. Local SEO, service area descriptions, contact forms, lead generation.
+                        </p>
+                    </div>
+                    
+                </div> <!-- single -->
+
+                <div class="single">
+                </div> <!-- single -->
+
+                <div class="single">
+                </div> <!-- single -->
+
+            </div> <!-- three_cards -->
+
+        </div> <!-- homePageCont -->
+                        
+    </div> <!-- hp4 -->    
+
+    <div id="footer-placeholder"></div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
