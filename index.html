@@ -52,7 +52,20 @@
             <p>For the best experience, please enable JavaScript in your browser settings or <a href="mailto:autumnlanewebmaster@gmail.com">contact me</a> for more info.</p>
         </div>
     </noscript>
-    <bootstrap-banner></bootstrap-banner>
+    <style>
+      /* Reserve space so the page doesn't shift when the banner loads */
+      #agency-banner-slot {
+          min-height: 400px;
+          width: 90%;
+          max-width: 1400px;
+      }
+    
+      /* If previously dismissed, collapse the reserved space BEFORE paint */
+      html.agency-banner-dismissed #agency-banner-slot {
+        min-height: 0;
+      }
+    </style>
+    <bootstrap-banner id="#agency-banner-slot"></bootstrap-banner>
     <div id="header-placeholder"></div>
 
     <div class="homePageCont" id="hp2">
